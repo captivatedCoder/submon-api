@@ -1,3 +1,4 @@
 {
-  "jwtPrivateKey": "submon_jwtPrivateKey"
+  "jwtPrivateKey": "submon_jwtPrivateKey",
+  "db": "submon_db"
 }
