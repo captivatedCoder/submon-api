@@ -1,11 +1,13 @@
 const winston = require('winston');
 const mongoose = require('mongoose');
+const config = require('config');
 const dbOptions = {
   useNewUrlParser: true,
   useCreateIndex: true
 };
 
 module.exports = function() {
-  mongoose.connect('mongodb://localhost/subtest', dbOptions)
+  const db = config.get('db');
+  mongoose.connect(db, dbOptions)
   .then(() => winston.info('Connected to MongoDB...'))
 }
