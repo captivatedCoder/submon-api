@@ -25,8 +25,8 @@ function validateSubscription(subscription) {
   const schema = {
     name: Joi.string().min(5).max(20).required(),
     subType: Joi.string().min(5).max(15).required(),
-    reminders: Joi.array().items(Joi.number()),
-    owner: Joi.string().required()
+    owner: Joi.string().required(),
+    reminders: Joi.array().items(Joi.number())    
   };
 
   return Joi.validate(subscription, schema);

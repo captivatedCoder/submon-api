@@ -9,5 +9,5 @@ const dbOptions = {
 module.exports = function() {
   const db = config.get('db');
   mongoose.connect(db, dbOptions)
-  .then(() => winston.info('Connected to MongoDB...'))
+  .then(() => winston.info(`Connected to ${db}...`))
 }

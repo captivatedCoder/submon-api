@@ -1,6 +1,6 @@
 const winston = require('winston');
 require('express-async-errors');
-require('winston-mongodb')
+// require('winston-mongodb')
 
 
 module.exports = function () {
@@ -24,8 +24,8 @@ module.exports = function () {
     level: 'debug'
   });
 
-  winston.add(winston.transports.MongoDB, {
-    db: 'mongodb://localhost/subtest',
-    level: 'error'
-  });
+  // winston.add(winston.transports.MongoDB, {
+  //   db: 'mongodb://localhost/subtest',
+  //   level: 'error'
+  // });
 }
