@@ -6,14 +6,23 @@ const Subscription = mongoose.model('Subscription', new mongoose.Schema({
     type: String,
     required: true,
     minlength: 5,
-    maxlength: 20
+    maxlength: 50
   },
   subType: {
-    type: String
+    type: String,
+    enum: ["SSL RENEWAL", "DOMAIN RENEWAL", "HARDWARE WARRANTY", "FIREWALL SUPPORT LICENSE", "MISCELLANEOUS"]
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User'
+  },
+  expirationDate: {
+    type: Date,
+    default: Date.now
+  },
+  notes: {
+    type: String,
+    maxlength: 1024
   },
   reminders: {
     type: [Number],
@@ -23,10 +32,12 @@ const Subscription = mongoose.model('Subscription', new mongoose.Schema({
 
 function validateSubscription(subscription) {
   const schema = {
-    name: Joi.string().min(5).max(20).required(),
-    subType: Joi.string().min(5).max(15).required(),
-    owner: Joi.string().required(),
-    reminders: Joi.array().items(Joi.number())    
+    name: Joi.string().min(5).max(50).required(),
+    subType: Joi.string().min(5).max(30).required(),
+    owner: Joi.string(),
+    expirationDate: Joi.date().required(),
+    notes: Joi.string().required(),
+    reminders: Joi.array().items(Joi.number())
   };
 
   return Joi.validate(subscription, schema);

@@ -105,3 +105,207 @@
 {"level":"info","message":"Connected to mongodb://localhost/test_db...","timestamp":"2019-05-30T22:02:02.316Z"}
 {"level":"info","message":"Listening on port 3000...","timestamp":"2019-05-31T12:29:26.745Z"}
 {"level":"info","message":"Connected to mongodb://localhost/test_db...","timestamp":"2019-05-31T12:29:26.764Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-01T18:41:20.749Z"}
+{"level":"info","message":"Connected to mongodb://localhost/test_db...","timestamp":"2019-06-01T18:41:20.767Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-01T19:02:07.599Z"}
+{"level":"info","message":"Connected to mongodb://localhost/test_db...","timestamp":"2019-06-01T19:02:07.617Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-01T20:12:34.742Z"}
+{"level":"info","message":"Connected to mongodb://localhost/test_db...","timestamp":"2019-06-01T20:12:34.760Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-01T20:13:33.965Z"}
+{"level":"info","message":"Connected to mongodb://localhost/test_db...","timestamp":"2019-06-01T20:13:33.983Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-01T20:14:22.606Z"}
+{"level":"info","message":"Connected to mongodb://localhost/test_db...","timestamp":"2019-06-01T20:14:22.624Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-01T20:16:05.779Z"}
+{"level":"info","message":"Connected to mongodb://localhost/test_db...","timestamp":"2019-06-01T20:16:05.797Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-01T20:17:09.706Z"}
+{"level":"info","message":"Connected to mongodb://localhost/test_db...","timestamp":"2019-06-01T20:17:09.726Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-01T20:18:10.028Z"}
+{"level":"info","message":"Connected to mongodb://localhost/test_db...","timestamp":"2019-06-01T20:18:10.046Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-01T20:42:43.441Z"}
+{"level":"info","message":"Connected to mongodb://localhost/test_db...","timestamp":"2019-06-01T20:42:43.459Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T12:29:04.878Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T12:29:05.460Z"}
+{"message":"E11000 duplicate key error collection: test.users index: email_1 dup key: { : \"dostestes@email.com\" }","stack":"MongoError: E11000 duplicate key error collection: test.users index: email_1 dup key: { : \"dostestes@email.com\" }\n    at Function.create (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb-core/lib/error.js:43:12)\n    at toError (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb/lib/utils.js:149:22)\n    at coll.s.topology.insert (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb/lib/operations/collection_ops.js:859:39)\n    at handler (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb-core/lib/topologies/replset.js:1155:22)\n    at /Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb-core/lib/connection/pool.js:397:18\n    at _combinedTickCallback (internal/process/next_tick.js:132:7)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","driver":true,"name":"MongoError","index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: test.users index: email_1 dup key: { : \"dostestes@email.com\" }","level":"error","timestamp":"2019-06-03T12:31:57.126Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T13:54:34.316Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T13:54:34.900Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T13:56:06.875Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T13:56:07.459Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T13:57:43.174Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T13:57:43.740Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T13:58:25.393Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T13:58:25.927Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T14:00:06.188Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T14:00:06.750Z"}
+{"message":"Joi.ObjectId is not a function","stack":"TypeError: Joi.ObjectId is not a function\n    at validateSubscription (/Users/jstevens/Documents/Projects/BackEnd/submon-api/models/subscription.js:28:16)\n    at router.post (/Users/jstevens/Documents/Projects/BackEnd/submon-api/routes/subscriptions.js:15:7)\n    at newFn (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/router/route.js:137:13)\n    at module.exports (/Users/jstevens/Documents/Projects/BackEnd/submon-api/middleware/auth.js:11:5)\n    at newFn (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/router/layer.js:95:5)\n    at next (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/router/route.js:112:3)\n    at newFn (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express-async-errors/index.js:16:20)\n    at Layer.handle [as handle_request] (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/router/layer.js:95:5)\n    at /Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/router/index.js:335:12)\n    at next (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/router/index.js:174:3)","level":"error","timestamp":"2019-06-03T14:00:09.412Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T14:00:27.973Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T14:00:28.497Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T14:02:18.066Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T14:02:18.666Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T14:02:46.777Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T14:02:47.293Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T15:27:24.211Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T15:27:24.791Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T15:43:43.761Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T15:43:44.352Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T15:44:05.884Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T15:44:06.410Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T15:46:15.909Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T15:46:16.467Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:08:24.190Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:08:24.745Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:11:25.433Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:11:25.974Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:12:19.665Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:12:20.193Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:13:13.684Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:13:14.263Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:14:02.410Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:14:02.936Z"}
+{"message":"Invalid status code: Bricked the phone","stack":"RangeError: Invalid status code: Bricked the phone\n    at ServerResponse.writeHead (_http_server.js:200:11)\n    at ServerResponse._implicitHeader (_http_server.js:191:8)\n    at write_ (_http_outgoing.js:632:9)\n    at ServerResponse.end (_http_outgoing.js:751:5)\n    at ServerResponse.send (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/response.js:225:10)\n    at ServerResponse.json (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/response.js:271:15)\n    at ServerResponse.send (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/express/lib/response.js:162:21)\n    at router.post (/Users/jstevens/Documents/Projects/BackEnd/submon-api/routes/subscriptions.js:30:21)\n    at <anonymous>\n    at runMicrotasksCallback (internal/process/next_tick.js:122:5)\n    at _combinedTickCallback (internal/process/next_tick.js:132:7)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","level":"error","timestamp":"2019-06-03T17:14:11.311Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:14:51.960Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:14:52.532Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:15:36.747Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:15:37.261Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:18:03.338Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:18:03.913Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:23:51.623Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:23:52.270Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:23:52.893Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:23:53.501Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:23:54.128Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:23:54.763Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:23:55.382Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:23:55.980Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:23:56.574Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:23:57.169Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:23:57.771Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:23:58.362Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:01.345Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:01.962Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:02.569Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:03.189Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:03.790Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:04.398Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:05.004Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:05.676Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:38.172Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:38.792Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:39.396Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:39.994Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:40.599Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:41.224Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:25:41.825Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:20.820Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:21.436Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:22.057Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:22.666Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:23.275Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:23.885Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:24.489Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:25.108Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:25.725Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:26.343Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:26.961Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:27.581Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:28.193Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:28.832Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:29.441Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:30.062Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:30.665Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:31.264Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:31.865Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:32.467Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:33.070Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:33.676Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:34.611Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:35.669Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:36.301Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:36.914Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:38.050Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:38.692Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:39.322Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:39.957Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:40.585Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:41.198Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:41.806Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:42.409Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:43.012Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:43.612Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:44.223Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:27:44.825Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:29:11.009Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:29:11.616Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:29:12.228Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:29:34.219Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:29:34.850Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:29:35.466Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:29:36.069Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:29:36.676Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:29:37.283Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:29:37.892Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:29:38.506Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:32:10.229Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:32:10.809Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:32:18.668Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:32:19.190Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:32:33.986Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:32:34.520Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:32:41.041Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:32:41.810Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:34:29.431Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:34:29.994Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:34:33.808Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:34:34.322Z"}
+{"message":"Unexpected number in JSON at position 96","stack":"SyntaxError: Unexpected number in JSON at position 96\n    at JSON.parse (<anonymous>)\n    at parse (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/body-parser/lib/types/json.js:89:19)\n    at /Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/body-parser/lib/read.js:121:18\n    at invokeCallback (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/raw-body/index.js:224:16)\n    at done (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/raw-body/index.js:273:7)\n    at emitNone (events.js:111:20)\n    at IncomingMessage.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1064:12)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","expose":true,"statusCode":400,"status":400,"body":"{\n\t\"name\": \"SQL210 Hardware Expiration\",\n\t\"subType\": \"HARDWARE SUPPORT\",\n\t\"expirationDate\": 2019-07-12T00:00:00.000Z,\n\t\"notes\": \"This is important information\",\n\t\"reminders\": [1,14,21]\n}","type":"entity.parse.failed","level":"error","timestamp":"2019-06-03T17:37:04.891Z"}
+{"message":"Unexpected token ' in JSON at position 92","stack":"SyntaxError: Unexpected token ' in JSON at position 92\n    at JSON.parse (<anonymous>)\n    at parse (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/body-parser/lib/types/json.js:89:19)\n    at /Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/body-parser/lib/read.js:121:18\n    at invokeCallback (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/raw-body/index.js:224:16)\n    at done (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/raw-body/index.js:273:7)\n    at emitNone (events.js:111:20)\n    at IncomingMessage.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1064:12)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","expose":true,"statusCode":400,"status":400,"body":"{\n\t\"name\": \"SQL210 Hardware Expiration\",\n\t\"subType\": \"HARDWARE SUPPORT\",\n\t\"expirationDate\": '2019-07-12T00:00:00.000Z',\n\t\"notes\": \"This is important information\",\n\t\"reminders\": [1,14,21]\n}","type":"entity.parse.failed","level":"error","timestamp":"2019-06-03T17:37:13.758Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:43:00.707Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:43:01.273Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:43:32.862Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:43:33.413Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:43:34.110Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:43:34.617Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:43:45.111Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:43:46.240Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:43:47.706Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:43:48.220Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:43:50.446Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:43:50.970Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:43:52.623Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:43:53.139Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:44:31.364Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:44:31.942Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:45:17.248Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:45:17.815Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:46:17.887Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:46:18.480Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:46:31.228Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:46:31.788Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:46:34.855Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:46:35.371Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:46:40.774Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:46:41.279Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:46:43.257Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:46:43.767Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:46:48.570Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:46:49.080Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:46:55.324Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:46:55.855Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:47:18.616Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:47:19.128Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:47:30.818Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:47:31.346Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:47:40.111Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:47:40.682Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:47:43.994Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:47:44.516Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:48:38.684Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:48:39.206Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:49:29.917Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:49:30.517Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:53:34.457Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:53:35.380Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:53:43.211Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:53:43.714Z"}
+{"message":"Unexpected token \n in JSON at position 136","stack":"SyntaxError: Unexpected token \n in JSON at position 136\n    at JSON.parse (<anonymous>)\n    at parse (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/body-parser/lib/types/json.js:89:19)\n    at /Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/body-parser/lib/read.js:121:18\n    at invokeCallback (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/raw-body/index.js:224:16)\n    at done (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/raw-body/index.js:273:7)\n    at emitNone (events.js:111:20)\n    at IncomingMessage.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1064:12)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","expose":true,"statusCode":400,"status":400,"body":"{\n\t\"name\": \"SQL210 Hardware Expiration\",\n\t\"subType\": \"HARDWARE WARRANTY\",\n\t\"expirationDate\": \"2019-07-12T00:00:00.000Z\",\n\t\"notes\": \"<h1>\nSome type of heading\n</h1>\n<p>\nThe important notes section\n</p>\",\n\t\"reminders\": [1,14,21]\n}","type":"entity.parse.failed","level":"error","timestamp":"2019-06-03T17:54:41.840Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-03T17:55:36.235Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-03T17:55:36.805Z"}
