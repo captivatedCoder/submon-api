@@ -8,7 +8,6 @@ describe('auth middleware', () => {
     server.close();
   });
 
-
   it('should return 401 if no token is provided', () => {
 
   });
