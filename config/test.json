@@ -1,5 +1,5 @@
 {
   "jwtPrivateKey": "1234",
-  "db": "mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority"
+  "db": "mongodb://localhost/submon_test"
 
 }

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest --verbose --coverage"
+    "test": "jest --verbose --coverage",
+    "server": "nodemon server.js --ignore logfile.json"
   },
   "engines": {
     "node": "8.16.0"

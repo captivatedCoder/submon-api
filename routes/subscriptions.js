@@ -53,7 +53,7 @@ router.get('/', auth, async (req, res, next) => {
     "name": "Server SSL Cert",
     "subType": "SSL RENEWAL",
     "owner": "{ObjectId}",
-    "expirationDate": "2019-07-14T00:00:00.000Z",
+    "expirationDate": "2019-07-14",
     "notes": "Test notes yay!",
  * }
 
@@ -87,7 +87,7 @@ router.get('/:id', auth, async (req, res, next) => {
     "name": "Server SSL Cert",
     "subType": "SSL RENEWAL",
     "owner": "{ObjectId}",
-    "expirationDate": "2019-07-14T00:00:00.000Z",
+    "expirationDate": "2019-07-14",
     "notes": "Test notes yay!",
  * }
 
@@ -99,14 +99,11 @@ router.post('/', auth, async (req, res, next) => {
   } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const date = new Date(req.body.expirationDate);
-
-  console.log(date);
   let subscription = new Subscription({
     name: req.body.name,
     subType: req.body.subType,
     owner: req.user,
-    expirationDate: date,
+    expirationDate: req.body.expirationDate,
     notes: req.body.notes,
     reminders: req.body.reminders
   });
@@ -136,7 +133,7 @@ router.post('/', auth, async (req, res, next) => {
     "name": "Server SSL Cert",
     "subType": "SSL RENEWAL",
     "owner": "{ObjectId}",
-    "expirationDate": "2019-07-14T00:00:00.000Z",
+    "expirationDate": "2019-07-14",
     "notes": "Test notes yay!",
  * }
 

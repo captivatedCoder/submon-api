@@ -624,3 +624,54 @@
 {"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-04T14:00:33.746Z"}
 {"message":"E11000 duplicate key error collection: test.users index: email_1 dup key: { : \"dostestes@email.com\" }","stack":"MongoError: E11000 duplicate key error collection: test.users index: email_1 dup key: { : \"dostestes@email.com\" }\n    at Function.create (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb-core/lib/error.js:43:12)\n    at toError (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb/lib/utils.js:149:22)\n    at coll.s.topology.insert (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb/lib/operations/collection_ops.js:859:39)\n    at handler (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb-core/lib/topologies/replset.js:1155:22)\n    at /Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb-core/lib/connection/pool.js:397:18\n    at _combinedTickCallback (internal/process/next_tick.js:132:7)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","driver":true,"name":"MongoError","index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: test.users index: email_1 dup key: { : \"dostestes@email.com\" }","level":"error","timestamp":"2019-06-04T14:00:48.522Z"}
 {"message":"E11000 duplicate key error collection: test.users index: email_1 dup key: { : \"dostestes@email.com\" }","stack":"MongoError: E11000 duplicate key error collection: test.users index: email_1 dup key: { : \"dostestes@email.com\" }\n    at Function.create (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb-core/lib/error.js:43:12)\n    at toError (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb/lib/utils.js:149:22)\n    at coll.s.topology.insert (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb/lib/operations/collection_ops.js:859:39)\n    at handler (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb-core/lib/topologies/replset.js:1155:22)\n    at /Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/mongodb-core/lib/connection/pool.js:397:18\n    at _combinedTickCallback (internal/process/next_tick.js:132:7)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","driver":true,"name":"MongoError","index":0,"code":11000,"errmsg":"E11000 duplicate key error collection: test.users index: email_1 dup key: { : \"dostestes@email.com\" }","level":"error","timestamp":"2019-06-04T15:54:35.697Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2019-06-04T19:39:41.876Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2019-06-04T19:40:29.696Z"}
+{"level":"info","message":"Connected to mongodb+srv://submon_user:yd5foL3iq8Tlc9r1@honeynutcluster-teaoo.azure.mongodb.net/test?retryWrites=true&w=majority...","timestamp":"2019-06-04T19:40:30.282Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2019-06-04T19:41:49.333Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2019-06-04T19:52:09.931Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2019-06-04T19:52:21.595Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2019-06-04T19:53:18.514Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2019-06-04T19:56:20.943Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2019-06-04T19:56:50.292Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon...","timestamp":"2019-06-04T19:56:50.311Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2019-06-04T19:58:44.333Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon...","timestamp":"2019-06-04T19:58:44.352Z"}
+{"level":"info","message":"Listening on port 8080","timestamp":"2019-06-04T20:00:21.166Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon...","timestamp":"2019-06-04T20:00:21.184Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T12:15:26.777Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T12:15:26.795Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T12:15:27.368Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T12:15:27.386Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T12:15:27.962Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T12:15:27.980Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T12:15:28.547Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T12:15:28.566Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T12:15:29.182Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T12:15:29.200Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T12:16:00.620Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T12:16:00.638Z"}
+{"message":"Unexpected token . in JSON at position 55","stack":"SyntaxError: Unexpected token . in JSON at position 55\n    at JSON.parse (<anonymous>)\n    at parse (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/body-parser/lib/types/json.js:89:19)\n    at /Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/body-parser/lib/read.js:121:18\n    at invokeCallback (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/raw-body/index.js:224:16)\n    at done (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/raw-body/index.js:213:7)\n    at IncomingMessage.onEnd (/Users/jstevens/Documents/Projects/BackEnd/submon-api/node_modules/raw-body/index.js:273:7)\n    at emitNone (events.js:111:20)\n    at IncomingMessage.emit (events.js:208:7)\n    at endReadableNT (_stream_readable.js:1064:12)\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\n    at process._tickCallback (internal/process/next_tick.js:181:9)","expose":true,"statusCode":400,"status":400,"body":"{\n\t\"name\": \"SQL210 SSL Cert\",\n\t\"subType\": \"SSL RENEWAL\".\n\t\"expirationDate\": \"2019-07-19\"\n}","type":"entity.parse.failed","level":"error","timestamp":"2019-06-05T12:29:06.525Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T13:55:46.988Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T13:55:47.009Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T14:00:08.651Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T14:00:08.669Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T14:02:07.072Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T14:02:07.091Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T14:02:32.932Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T14:02:32.951Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T14:06:24.999Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T14:06:25.018Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T14:07:03.749Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T14:07:03.767Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T14:07:42.780Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T14:07:42.799Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T14:07:46.066Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T14:07:46.085Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T14:08:21.798Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T14:08:21.816Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T14:08:27.887Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T14:08:27.904Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T14:08:30.132Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T14:08:30.150Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-05T14:08:31.533Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-05T14:08:31.553Z"}

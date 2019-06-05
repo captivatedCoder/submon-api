@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "submon_jwtPrivateKey",
+  "db": "mongodb://mongo:27017/submon"
+}

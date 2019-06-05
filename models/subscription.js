@@ -17,8 +17,7 @@ const Subscription = mongoose.model('Subscription', new mongoose.Schema({
     ref: 'User'
   },
   expirationDate: {
-    type: Date,
-    default: Date.now
+    type: String
   },
   notes: {
     type: String,
@@ -35,7 +34,7 @@ function validateSubscription(subscription) {
     name: Joi.string().min(5).max(50).required(),
     subType: Joi.string().min(5).max(30).required(),
     owner: Joi.string(),
-    expirationDate: Joi.date().required(),
+    expirationDate: Joi.string().required(),
     notes: Joi.string().required(),
     reminders: Joi.array().items(Joi.number())
   };
