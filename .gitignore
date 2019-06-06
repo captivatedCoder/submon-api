@@ -1,7 +1,6 @@
 node_modules/
 coverage/
 data/
-swagger.yaml
 .dockerignore
 docker-compose.yml
 Dockerfile

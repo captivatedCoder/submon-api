@@ -694,3 +694,5 @@
 {"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-06T16:09:32.572Z"}
 {"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-06T16:09:40.601Z"}
 {"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-06T16:09:40.620Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-06-06T16:16:27.065Z"}
+{"level":"info","message":"Connected to mongodb://localhost/submon_test...","timestamp":"2019-06-06T16:16:27.083Z"}

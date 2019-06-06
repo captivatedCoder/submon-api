@@ -27,8 +27,6 @@
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.11",
     "mongoose": "^5.5.12",
-    "swagger-editor": "^3.6.29",
-    "swagger-ui": "^3.22.2",
     "winston": "^2.4.4",
     "winston-mongodb": "^3.0.2"
   },
