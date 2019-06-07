@@ -33,7 +33,7 @@ router.get('/', auth, async (req, res, next) => {
 
     res.send(subscriptions);
   } catch (ex) {
-    res.status(500).send('Bricked the phone.');
+    res.status(500).send(ex);
   }
 });
 
@@ -68,7 +68,7 @@ router.get('/:id', auth, async (req, res, next) => {
 
     res.send(subscription);
   } catch (ex) {
-    res.status(500).send('Bricked the phone.');
+    res.status(500).send(ex);
   }
 });
 /**
@@ -107,6 +107,7 @@ router.post('/', auth, async (req, res, next) => {
     notes: req.body.notes,
     reminders: req.body.reminders
   });
+
   try {
     subscription = await subscription.save();
 
@@ -155,7 +156,7 @@ router.put('/:id', auth, validateObjectId, async (req, res, next) => {
 
     res.send(subscription);
   } catch (ex) {
-    res.status(500).send('Bricked the phone.');
+    res.status(500).send(ex);
   }
 
 });
@@ -177,7 +178,7 @@ router.delete('/:id', auth, async (req, res, next) => {
     if (!subscription) return res.status(404).send('The subscription with the given ID was not found.');
     res.status(200).send('Subscription deleted');
   } catch (ex) {
-    res.status(500).send('Bricked the phone.');
+    res.status(500).send(ex);
   }
 });
 

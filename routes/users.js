@@ -4,6 +4,7 @@ const {
   validate
 } = require('../models/user');
 const auth = require('../middleware/auth');
+const admin = require('../middleware/admin');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
@@ -25,11 +26,11 @@ const bcrypt = require('bcrypt');
  */
 router.get('/me', auth, async (req, res) => {
   try {
-    const user = await User.findById(req.user._id).select('-password');
+    const user = await User.findById(req.user._id).select('-password -__v');
 
     res.send(user);
   } catch (ex) {
-    res.status(500).send('Something is borked.');
+    res.status(500).send(ex);
   }
 });
 
@@ -47,9 +48,9 @@ router.get('/me', auth, async (req, res) => {
      "__v": 0
    }
  * @apiError 400 Error validating the body, message attached
- * @apiError 409 User already exists.  Email addresses must be unique
+ * @apiError 500 User already exists.  Email addresses must be unique
  */
-router.post('/', async (req, res) => {
+router.post('/', [auth, admin], async (req, res) => {
   const {
     error
   } = validate(req.body);
@@ -58,15 +59,23 @@ router.post('/', async (req, res) => {
   let user = User.findOne({
     email: req.body.email
   });
-  if (!user) return res.status(409).send('User already exists.');
+  
+  try {
+    user = new User(_.pick(req.body, ['name', 'email', 'password', 'isAdmin']));
+    const salt = await bcrypt.genSalt(10);
+    user.password = await bcrypt.hash(user.password, salt);
+    await user.save();
 
-  user = new User(_.pick(req.body, ['name', 'email', 'password']));
-  const salt = await bcrypt.genSalt(10);
-  user.password = await bcrypt.hash(user.password, salt);
-  await user.save();
 
-  const token = user.generateAuthToken();
-  res.header('x-auth-token', token).send(_.pick(user, ['_id', 'name', 'email']));
+    const token = user.generateAuthToken();
+    res.header('x-auth-token', token).send(_.pick(user, ['_id', 'name', 'email']));
+  } catch (ex) {
+    if (ex.code === 11000 && ex.name === "MongoError") {
+      res.status(500).send('User already exists');
+    }
+    res.status(500).send(ex);
+  }
+
 });
 
 module.exports = router;

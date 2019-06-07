@@ -1,6 +1,6 @@
 {
   "name": "submon-api",
-  "version": "0.3.0",
+  "version": "0.2.0",
   "title": "Subscription Monitor WebAPI",
   "url": "http://localhost:3000"
 }
