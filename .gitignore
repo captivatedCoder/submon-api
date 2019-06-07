@@ -6,3 +6,4 @@ docker-compose.yml
 Dockerfile
 logfile.json
 unhandledException.json
+.DS_Store
