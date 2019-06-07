@@ -1,5 +1,6 @@
 const Joi = require('@hapi/joi');
 const mongoose = require('mongoose');
+const {subTypeSchema} = require('./subType');
 
 const Subscription = mongoose.model('Subscription', new mongoose.Schema({
   name: {
@@ -9,8 +10,8 @@ const Subscription = mongoose.model('Subscription', new mongoose.Schema({
     maxlength: 50
   },
   subType: {
-    type: String,
-    enum: ["SSL RENEWAL", "DOMAIN RENEWAL", "HARDWARE WARRANTY", "FIREWALL SUPPORT LICENSE", "MISCELLANEOUS"]
+    type: subTypeSchema,
+    required: true
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
@@ -32,7 +33,7 @@ const Subscription = mongoose.model('Subscription', new mongoose.Schema({
 function validateSubscription(subscription) {
   const schema = {
     name: Joi.string().min(5).max(50).required(),
-    subType: Joi.string().min(5).max(30).required(),
+    subId: Joi.objectId().required(),
     owner: Joi.string(),
     expirationDate: Joi.string().required(),
     notes: Joi.string().required(),
