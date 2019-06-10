@@ -2,6 +2,7 @@ const {
   Subscription,
   validate
 } = require('../models/subscription');
+const {SubType} = require('../models/subType');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
@@ -85,12 +86,13 @@ router.get('/:id', auth, async (req, res, next) => {
     ],
     "_id": "{ObjectId}",
     "name": "Server SSL Cert",
-    "subType": "SSL RENEWAL",
+    "subType": {subType},
     "owner": "{ObjectId}",
     "expirationDate": "2019-07-14",
     "notes": "Test notes yay!",
  * }
 
+ * @apiError 400 Invalid Subscription Type
  * @apiError 400 Error validating the subscription body, error enclosed
  */
 router.post('/', auth, async (req, res, next) => {
@@ -99,9 +101,15 @@ router.post('/', auth, async (req, res, next) => {
   } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
+  const subType = await SubType.findById(req.body.subId);
+  if (!subType) return res.status(400).send("Invalid Subscription Type");
+
   let subscription = new Subscription({
     name: req.body.name,
-    subType: req.body.subType,
+    subType:{
+      _id: subType._id,
+      name: subType.name
+    },
     owner: req.user,
     expirationDate: req.body.expirationDate,
     notes: req.body.notes,

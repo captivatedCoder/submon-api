@@ -6,6 +6,7 @@ const subTypeSchema = new mongoose.Schema({
     type: String,
     require: true,
     unique: true,
+    uppercase: true,
     minlength: 5,
     maxlength: 50
   }
