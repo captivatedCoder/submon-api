@@ -96,7 +96,6 @@ router.get('/:id', auth, async (req, res, next) => {
  * @apiError 400 Error validating the subscription body, error enclosed
  */
 router.post('/', auth, async (req, res, next) => {
-  console.log(req.body);
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
