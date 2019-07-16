@@ -1,3 +1,5 @@
 node_modules/
 log.json
 exceptions.json
+.DS_Store
+.gitignore
