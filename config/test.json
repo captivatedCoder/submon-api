@@ -1,5 +1,4 @@
 {
-  "jwtPrivateKey": "1234",
-  "db": "mongodb://localhost/submon_test"
-
+  "jwtPrivateKey": "submon_jwtPrivateKey",
+  "db": "submon_db"
 }

@@ -9,20 +9,6 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
-/**
- * @api {get} /subtypes/ Get all subscription types
- * @apiName GetSubType
- * @apiGroup SubType
- * @apiHeader {JWT} x-auth-token Authorization token provided at login
-
- * @apiSuccess {String} Body User information
- * @apiSuccessExample Example data on success:
-   {     
-      "_id": "5cf9883d70c7e2e9aef4465f",
-      "name": "SSL RENEWAL"
-   }
- * @apiError 404 No subscription types found
- */
 router.get('/', auth, async (req, res) => {
   try {
     const subTypes = await SubType.find()
@@ -38,20 +24,6 @@ router.get('/', auth, async (req, res) => {
 
 });
 
-/**
- * @api {get} /subtype/:id Get a specific subscription type
- * @apiName GetOneSubType
- * @apiGroup SubType
- * @apiHeader {JWT} x-auth-token Authorization token provided at login
-
- * @apiSuccess {SubType} Body The requested subscription type
- * @apiSuccessExample Example data on success:
- *{
-   "_id": "5cf9883d70c7e2e9aef4465f",
-   "name": "SSL RENEWAL"
- }
- * @apiError 404 The subscription type with the given ID was not found
- */
 router.get("/:id", [auth, admin, validateObjectId], async (req, res) => {
   try {
     const subType = await SubType.findById(req.params.id).select("-__v");
@@ -65,22 +37,6 @@ router.get("/:id", [auth, admin, validateObjectId], async (req, res) => {
   }
 });
 
-/**
- * @api {post} /subtypes Add a subscription type
- * @apiName PostSubType
- * @apiGroup SubType
- * @apiHeader {JWT} x-auth-token Authorization token provided at login
- * 
- * @apiSuccess {SubType} Body The newly created subscription type
- * @apiSuccessExample Example data on success:
- *{
-   "_id": "5cf9883d70c7e2e9aef4465f",
-   "name": "SSL RENEWAL"
- *}
-
- * @apiError 400 Error validating the subscription type body, error enclosed
- * @apiError 500 Subscription Type already exists
- */
 router.post("/", [auth, admin], async (req, res) => {
   const {
     error
@@ -103,22 +59,6 @@ router.post("/", [auth, admin], async (req, res) => {
   }
 });
 
-/**
- * @api {put} /subtype/:id Update a subscription type
- * @apiName PutSubType
- * @apiGroup SubType
- * @apiHeader {JWT} x-auth-token Authorization token provided at login
-
- * @apiSuccess {SubType} Body The updated subscription type
- * @apiSuccessExample Example data on success:
- *{
-   "_id": "5cf9883d70c7e2e9aef4465f",
-   "name": "SSL RENEWAL" *
- }
-
- * @apiError 400 Error validating the subscription type body, error enclosed
- * @apiError 404 The subscription type with given ID was not found
- */
 router.put("/:id", [auth, admin, validateObjectId], async (req, res) => {
   const {
     error
@@ -143,16 +83,6 @@ router.put("/:id", [auth, admin, validateObjectId], async (req, res) => {
   }
 });
 
-/**
- * @api {delete} /subtype/:id Delete a subscription type
- * @apiName DeleteSubType
- * @apiGroup SubType
- * @apiHeader {JWT} x-auth-token Authorization token provided at login
-
- * @apiSuccess {String} Body Subscription type deleted
-   
- * @apiError 404 The subscription type with the given ID was not found
- */
 router.delete("/:id", [auth, admin, validateObjectId], async (req, res) => {
   try {
     const subType = await SubType.findByIdAndRemove(req.params.id);
